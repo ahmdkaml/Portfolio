@@ -102,16 +102,79 @@ function App() {
 
           <Row className="g-4 justify-content-center">
             {[
+              // Languages
               "C#",
-              ".NET",
               "Java",
               "Python",
-              "React",
               "TypeScript",
+              "JavaScript",
+              "C",
+              "SQL",
+              "HTML",
+              "CSS",
+
+              // Frontend
+              "React",
+              "React-Bootstrap",
+              "Bootstrap",
+              "QML",
+              "PySide6",
+
+              // Backend
+              ".NET",
+              "ASP.NET Core",
               "Spring Boot",
+              "REST APIs",
+              "Entity Framework Core",
+              "JPA / Hibernate",
+              "Maven",
+
+              // Databases
+              "PostgreSQL",
+              "MySQL",
+              "H2",
+
+              // AI & Algorithms
+              "Machine Learning",
+              "BFS / DFS",
+              "A* Search",
+              "Minimax",
+              "Alpha-Beta Pruning",
+              "Constraint Satisfaction",
+              "Genetic Algorithms",
+              "Clustering",
+              "Gradient Descent",
+              "Newton's Method",
+
+              // Software Engineering
+              "OOP",
+              "Data Structures & Algorithms",
+              "Design Patterns",
+              "Unit Testing",
+              "Integration Testing",
+              "API Design",
+              "Debugging",
+              "Performance Optimization",
+
+              // DevOps & Tools
               "Git",
               "GitHub",
-              "SQL",
+              "GitHub Actions",
+              "Docker",
+              "Docker Compose",
+              "Linux",
+              "Bash",
+              "PowerShell",
+              "CI/CD",
+
+              // Systems
+              "Operating Systems",
+              "Process Scheduling",
+              "IPC",
+              "POSIX",
+              "Memory Management",
+              "Garbage Collection",
+              "Computer Organization",
             ].map((skill) => (
               <Col xs={6} sm={4} md={3} lg={2} key={skill}>
                 <Card className="border-0 shadow-sm h-100 text-center">

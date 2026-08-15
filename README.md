@@ -99,7 +99,7 @@ npm run preview
 * [ ] Add detailed project links
 * [ ] Add GitHub and LinkedIn integration
 * [ ] Add animations and transitions
-* [ ] Deploy to GitHub Pages
+* [x] Deploy to GitHub Pages
 
 ## 👨‍💻 About
 

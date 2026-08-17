@@ -99,87 +99,124 @@ function App() {
       <section id="skills" className="bg-light py-5">
         <Container>
           <h2 className="fw-bold text-center mb-5">Skills</h2>
-
           <Row className="g-4 justify-content-center">
             {[
-              // Languages
-              "C#",
-              "Java",
-              "Python",
-              "TypeScript",
-              "JavaScript",
-              "C",
-              "SQL",
-              "HTML",
-              "CSS",
+              {
+                title: "Languages",
+                skills: [
+                  "C#",
+                  "Java",
+                  "Python",
+                  "TypeScript",
+                  "JavaScript",
+                  "C",
+                  "SQL",
+                  "HTML",
+                  "CSS",
+                ],
+              },
+              {
+                title: "Frontend",
+                skills: [
+                  "React",
+                  "React-Bootstrap",
+                  "Bootstrap",
+                  "QML",
+                  "PySide6",
+                ],
+              },
+              {
+                title: "Backend",
+                skills: [
+                  ".NET",
+                  "ASP.NET Core",
+                  "Spring Boot",
+                  "REST APIs",
+                  "Entity Framework Core",
+                  "JPA / Hibernate",
+                  "Maven",
+                ],
+              },
+              {
+                title: "Databases",
+                skills: [
+                  "PostgreSQL",
+                  "MySQL",
+                  "H2",
+                ],
+              },
+              {
+                title: "AI & Algorithms",
+                skills: [
+                  "Machine Learning",
+                  "BFS / DFS",
+                  "A* Search",
+                  "Minimax",
+                  "Alpha-Beta Pruning",
+                  "Constraint Satisfaction",
+                  "Genetic Algorithms",
+                  "Clustering",
+                  "Gradient Descent",
+                  "Newton's Method",
+                ],
+              },
+              {
+                title: "Software Engineering",
+                skills: [
+                  "OOP",
+                  "Data Structures & Algorithms",
+                  "Design Patterns",
+                  "Unit Testing",
+                  "Integration Testing",
+                  "API Design",
+                  "Debugging",
+                  "Performance Optimization",
+                ],
+              },
+              {
+                title: "DevOps & Tools",
+                skills: [
+                  "Git",
+                  "GitHub",
+                  "GitHub Actions",
+                  "Docker",
+                  "Docker Compose",
+                  "Linux",
+                  "Bash",
+                  "PowerShell",
+                  "CI/CD",
+                ],
+              },
+              {
+                title: "Systems",
+                skills: [
+                  "Operating Systems",
+                  "Process Scheduling",
+                  "IPC",
+                  "POSIX",
+                  "Memory Management",
+                  "Garbage Collection",
+                  "Computer Organization",
+                ],
+              },
+            ].map((category) => (
+              <Col xs={12} md={6} lg={4} xl={3} key={category.title}>
+                <Card className="border-0 shadow-sm h-100">
+                  <Card.Body className="p-4">
+                    <Card.Title className="fw-bold mb-3">
+                      {category.title}
+                    </Card.Title>
 
-              // Frontend
-              "React",
-              "React-Bootstrap",
-              "Bootstrap",
-              "QML",
-              "PySide6",
-
-              // Backend
-              ".NET",
-              "ASP.NET Core",
-              "Spring Boot",
-              "REST APIs",
-              "Entity Framework Core",
-              "JPA / Hibernate",
-              "Maven",
-
-              // Databases
-              "PostgreSQL",
-              "MySQL",
-              "H2",
-
-              // AI & Algorithms
-              "Machine Learning",
-              "BFS / DFS",
-              "A* Search",
-              "Minimax",
-              "Alpha-Beta Pruning",
-              "Constraint Satisfaction",
-              "Genetic Algorithms",
-              "Clustering",
-              "Gradient Descent",
-              "Newton's Method",
-
-              // Software Engineering
-              "OOP",
-              "Data Structures & Algorithms",
-              "Design Patterns",
-              "Unit Testing",
-              "Integration Testing",
-              "API Design",
-              "Debugging",
-              "Performance Optimization",
-
-              // DevOps & Tools
-              "Git",
-              "GitHub",
-              "GitHub Actions",
-              "Docker",
-              "Docker Compose",
-              "Linux",
-              "Bash",
-              "PowerShell",
-              "CI/CD",
-
-              // Systems
-              "Operating Systems",
-              "Process Scheduling",
-              "IPC",
-              "POSIX",
-              "Memory Management",
-              "Garbage Collection",
-              "Computer Organization",
-            ].map((skill) => (
-              <Col xs={6} sm={4} md={3} lg={2} key={skill}>
-                <Card className="border-0 shadow-sm h-100 text-center">
-                  <Card.Body className="d-flex align-items-center justify-content-center">
-                    <span className="fw-semibold">{skill}</span>
+                    <div className="d-flex flex-wrap gap-2">
+                      {category.skills.map((skill) => (
+                        <span
+                          key={skill}
+                          className="badge bg-light text-dark border px-3 py-2 fw-medium"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
                   </Card.Body>
                 </Card>
               </Col>
